@@ -29,7 +29,7 @@ $service = new MessagesPostServiceRequest();
 $service->setClientId(1);
 $service->setText('Test');
 $service->setTransport(BaseServiceRequest::TRANSPORT_WHATSAPP);
-$response = new MessagesPostService(Response$service->sendRequest('token'));
+$response = new MessagesPostServiceResponse($service->sendRequest('token'));
 ```
 
 ### 2. Получение клиента по номеру телефона
